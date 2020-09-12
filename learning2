@@ -49,9 +49,9 @@ switch 语句种使用break
 在嵌套循环语句中用break 退出内循环
 
 
-continue
+continue：重头开始执行循环，break是直接退出
 
-
+goto语句：无条件跳转语句
 
 
 

@@ -41,11 +41,15 @@ for(int i=0;i<10;i++)
     cout<<i<<endl;
 }
 
+switch 语句种使用break
 
 
+在循环语句中用break
+
+在嵌套循环语句中用break 退出内循环
 
 
-
+continue
 
 
 

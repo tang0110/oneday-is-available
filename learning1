@@ -1,1 +1,14 @@
 Today is my first day of learning C + +, I am very excited, I hope I can gain something and get a suitable job for me in the future.
+
+宏常量
+#define
+
+const 修饰的变量(例const int 7)是常量
+创建变量：数据类型 变量名称  = 变量初始值
+
+
+
+
+
+
+

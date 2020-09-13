@@ -189,7 +189,7 @@ void modifyPerson(Addressbooks* abs)
 		string sex;
 		cout << "请输入性别： " << endl;
 		cin >> sex;
-		abs->personArray[ret].m_Sex = name;
+		abs->personArray[ret].m_Sex = sex;
 		//年龄
 		int age;
 		cout << "请输入年龄： " << endl;

@@ -1,0 +1,26 @@
+二维矩阵matrix[n][m]
+
+每行的元素从左到右升序排列
+每列的元素从上到下升序排列    
+例如：
+[
+  [1,   4,  7, 11, 15],
+  [2,   5,  8, 12, 19],
+  [3,   6,  9, 16, 22],
+  [10, 13, 14, 17, 24],
+  [18, 21, 23, 26, 30]
+]
+ 给定一个target，如在上述矩阵中能找到与之相等的值，那么return true  否则false
+ 
+ 思路:可以从矩阵的右上角'15'这个数开始寻找 若该值比target小，那么row++，数值指向'19'很显然要比15大，则column--；这样就可以成功找出target。
+ 
+ if(matrix.empty() || matrix[0].empty()) return false;
+ int rowSize=matrix.size(),columnSize=matrix[0].size;
+ int row=0; column=coluSize-1;
+ while(row<rowSize && column>=0 && !matrix.empty())
+ {
+   if(matrix[row][column]==target) return true;
+   else if(matrix[row][column]<target) row++;
+   else column--;
+ }
+ return false;
